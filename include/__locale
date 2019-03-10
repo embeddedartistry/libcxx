@@ -27,6 +27,8 @@
 #elif defined(__sun__)
 # include <xlocale.h>
 # include <support/solaris/xlocale.h>
+#elif defined(_BAREMETAL)
+# include <support/baremetal/xlocale.h>
 #elif defined(_NEWLIB_VERSION)
 # include <support/newlib/xlocale.h>
 #elif (defined(__APPLE__)      || defined(__FreeBSD__) \
